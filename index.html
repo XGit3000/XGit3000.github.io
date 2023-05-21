@@ -5,12 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
+    <style>
+        body, html {
+        height: 100%;
+        background-color: black;
+        }
+
+        p{
+            font-family: Arial;
+        }
+
+        .ParticleAcceleratorBackground{
+            background-image: url("images/pexels-ramaz-bluashvili-6855582.jpg");
+            
+            /* Full height */
+        height: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        .ComputationalAnalysisBackground{
+            background-image: url("images/pexels-thisisengineering-3862632.jpg");
+            
+            /* Full height */
+        height: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        .CalculusSolutionsBackground{
+            background-image: url("images/pexels-thisisengineering-3862130.jpg");
+            
+            /* Full height */
+        height: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        .CoolDarkDiv{
+            background-color: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(5px);
+            /* background-blend-mode: multiply; */
+            width: 40%;
+            height: 100%;
+        }
+        
+        .CoolDarkDiv2{
+            background-color: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(5px);
+            /* background-blend-mode: multiply; */
+            width: 40%;
+            height: 100%;
+            margin-left: auto; 
+            margin-right: 0;
+        }
+
+        .MainBoxTitleText{
+            color: white;
+            font-size: 500%;
+            padding: 4%;
+            margin: 0%;
+        }
+
+
+        
+        .TopButtonBase{
+            display: inline-block;
+            height: 100%;
+        }
+
+        .TopBarBase{
+            height: 5%;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>yo</h1>
-    <button>thing</button>
-    <p>lotsa textextextextxeted</p>
-    <a href="https://www.google.com/search?q=trollface" target="_blank">linkt2yeah</a>
-    <script>src="index.js"</script>
+    <div class="TopBarBase">
+        <button class="TopButtonBase">Test Button 1</button>
+        <button class="TopButtonBase">Test Button 2</button>
+        <button class="TopButtonBase">Third Test Button</button>
+    </div>
+    <div class="ParticleAcceleratorBackground">
+        <div class="CoolDarkDiv2">
+            <p class="MainBoxTitleText">
+                text things
+            </p>
+
+        </div>
+    </div>
+    <div class="ComputationalAnalysisBackground">
+        <div class="CoolDarkDiv">
+            <p class="MainBoxTitleText">
+                text things
+            </p>
+
+        </div>
+    </div>
+    <div class="CalculusSolutionsBackground">
+        <div class="CoolDarkDiv2">
+            <p class="MainBoxTitleText">
+                text things
+            </p>
+
+        </div>
+    </div>
 </body>
 </html>
