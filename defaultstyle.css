@@ -1,0 +1,187 @@
+body, html {
+    height: 100%;
+    background-color: black;
+    margin: 0px;
+    }
+
+    p{
+        font-family: Roboto;
+        font-size: 30px;
+        font-size: 3.5vw;
+    }
+
+
+
+    .ParticleAcceleratorBackground{
+        background-image: url("images/pexels-ramaz-bluashvili-6855582.jpg");
+        
+        /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    }
+
+    .ComputationalAnalysisBackground{
+        background-image: url("images/pexels-thisisengineering-3862632.jpg");
+        
+        /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    }
+
+    .CalculusSolutionsBackground{
+        background-image: url("images/pexels-thisisengineering-3862130.jpg");
+        
+        /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .ShopMainBackground{
+        background-image: url("images/pexels-tima-miroshnichenko-5708232.jpg");
+        
+        /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .NuclearEquipmentBackground{
+        background-image: url("images/pexels-alexander-dummer-132700.jpg");
+        
+        /* Full height */
+    height: 50%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .NuclearBabyMonitorsBackground{
+        background-image: url("images/pexels-clark-cruz-4356989.jpg");
+        
+        /* Full height */
+    height: 50%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .NuclearMachineryBackground{
+        background-image: url("images/pexels-jannis-knorr-2933243.jpg");
+        
+        /* Full height */
+    height: 50%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .NuclearWeaponryBackground{
+        background-image: url("images/pexels-joseph-fuller-5578367.jpg");
+        
+        /* Full height */
+    height: 50%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .CoolDarkDiv{
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(5px);
+        /* background-blend-mode: multiply; */
+        width: 40%;
+        height: 100%;
+    }
+    
+    .CoolDarkDiv2{
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(5px);
+        /* background-blend-mode: multiply; */
+        width: 40%;
+        height: 100%;
+        margin-left: auto; 
+        margin-right: 0;
+    }
+
+    .MainBoxTitleText{
+        color: white;
+        font-size: 5vw;
+        padding: 4%;
+        margin: 0%;
+    }
+
+    .MainBoxBodyText{
+        color: white;
+        /* font-size: 150%; */
+        font-size: 1.5vw;
+        padding: 4%;
+        margin: 0%;
+    }
+
+
+    
+    .TopButtonBase{
+        display: inline-block;
+        height: 100%;
+        background-color: #181818;
+        color: white;
+        font-weight: Bold;
+        padding: 10px;
+        border-width: 3px;
+        border-color: #666666;
+        transition: 0.1s;
+        cursor: pointer;
+    }
+
+    .TopButtonBase:hover{
+        background-color: #525252;
+        border-color: white;
+    }
+
+    .TopBarBase{
+        height: 5%;
+    }
+
+    .BottomBarBase{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SignupThingBase{
+        align-content: center;
+    }
