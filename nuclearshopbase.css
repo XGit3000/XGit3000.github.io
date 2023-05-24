@@ -1,0 +1,52 @@
+.MainDropdownTitle{
+    font-weight: bold;
+    display: block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.658);
+    width:100%;
+    border-width: 2px;
+}
+
+.MainDropdownTitle:hover{
+    background-color:rgba(78, 78, 78, 0.658)
+}
+
+.MainDropdownItems{
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+    width: 100%;
+    border-color: transparent;
+    /* border-style: none; */
+    /* font-size: 1vw; */
+
+}
+.MainDropdownItems:hover{
+    border-color: white;
+    /* border-style:outset; */
+}
+
+.MainDropdownMenu{
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.63);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.ItemSelection{
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.ButtonTitleText{
+    font-size: 1vw;
+}
+
+.ItemText{
+    font-size: 1vw;
+    text-align: left;
+}

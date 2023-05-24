@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="defaultstyle.css">
+        <link rel="stylesheet" href="nuclearshopbase.css">
         
         <style>
             .MainBackground{
@@ -22,15 +23,6 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-            }
-            .MainDropdownTitle{
-                font-weight: bold;
-                display: block;
-                color: white;
-            }
-            .MainDropdownItems{
-                color: red;
-
             }
         </style>
     </head>
@@ -49,10 +41,19 @@
                     <strong>Nuclear Equipment</strong>
                 </p>
                 <p class="MainBoxBodyText">The One-Stop Shop for all Things Thermonuclear Laboratories&trade; Products.</p>
-                <button onclick="fillMenu('titletext', ['Uranium', 'Cesium', 'Plutonium'], 'ItemSelection1', 'MainDropdownTitle', 'MainDropdownItems')">Click4things</button>
-                <div class="ItemSelection1" id="ItemSelection1"></div>
+                <!-- <button onclick="fillMenu('titletext', ['Uranium', 'Cesium', 'Plutonium'], 'ItemSelection1', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu')">Click4things</button> -->
+                <div class="ItemSelection" id="ItemSelection1"></div>
+                <div class="ItemSelection" id="ItemSelection2"></div>
+                <div class="ItemSelection" id="ItemSelection3"></div>
             </div>
         </div>
     </body>
     <script src="nuclearshopbase.js"></script>
+    <script>
+        console.log("yeah we in town now bois")
+        fillMenu('Isotope', ['Uranium', 'Cesium', 'Plutonium'], 'ItemSelection1', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
+        fillMenu('Instrument', ['Radiometer', 'Voltmeter', 'Windows XP Laptop', 'Multimeter'], 'ItemSelection2', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
+        fillMenu('Warrenty', ['20 Minutes', '2 years', 'Lifetime (5 years)'], 'ItemSelection3', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
+        initializeCollapsableMenus();
+    </script>
 </html>
