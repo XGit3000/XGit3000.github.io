@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Shop</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="defaultstyle.css">
+        <link rel="stylesheet" href="nuclearshopbase.css">
+        
+        <style>
+            .MainBackground{
+                background-image: url("images/pexels-clark-cruz-4356989.jpg");
+                    
+                    /* Full height */
+                /* display: flex;
+                flex-direction: column; */
+                height: 100%;
+                /* height: auto; */
+                /* min-height: 100vh; */
+                /* min-height: 100%; */
+
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: sticky;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="TopBarBase">
+            <a href="index.html"><button class="TopButtonBase">About Us</button></a>
+            <a href="shop.html"><button class="TopButtonBase">Shop</button></a>
+            <button class="TopButtonBase">Legal</button>
+            <button class="TopButtonBase">Careers</button>
+            <button class="TopButtonBase">Services</button>
+        </div>
+
+        <div class="MainBackground">
+            <div class="CoolDarkDiv2">
+                <p class="MainBoxTitleText">
+                    <strong>Nuclear Baby Monitors</strong>
+                </p>
+                <p class="MainBoxBodyText">The One-Stop Shop for all Things Thermonuclear Laboratories&trade; Products.</p>
+                <!-- <button onclick="fillMenu('titletext', ['Uranium', 'Cesium', 'Plutonium'], 'ItemSelection1', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu')">Click4things</button> -->
+                <div class="ItemSelection" id="ItemSelection1"></div>
+                <div class="ItemSelection" id="ItemSelection2"></div>
+                <div class="ItemSelection" id="ItemSelection3"></div>
+                <div class="ItemSelection" id="ItemSelection4"></div>
+                <div class="ItemSelection" id="ItemSelection5"></div>
+                <div class="ItemSelection" id="ItemSelection6"></div>
+                <div class="ItemSelection" id="ItemSelection7"></div>
+            </div>
+        </div>
+    </body>
+    <script src="nuclearshopbase.js"></script>
+    <script>
+        console.log("yeah we in town now bois")
+        fillMenu('Reaction Type', ['Fusion', 'Fission'], 'ItemSelection1', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
+        fillMenu('Isotope', ['Hydrogen', 'Deuterium', 'Uranium', 'Cesium', 'Iron'], 'ItemSelection2', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
+        fillMenu('Battery Life', ['80 Minutes', '15 Years', 'Lifetime (95 years)'], 'ItemSelection3', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
+        fillMenu('Resolution', ['FHD (1920x1080)', 'QHD (2560x1440)', 'UHD (3840x2160)'], 'ItemSelection4', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
+        fillMenu('Frame Rate', ['60Hz', '120Hz', '144Hz', '240Hz', '360Hz', '480Hz', '1,000Hz','2,000Hz','2.4GHz'], 'ItemSelection5', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
+        fillMenu('Divorce Proceedings', ['Attorney', 'Civil Lawsuit', 'Hitman'], 'ItemSelection6', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
+        fillMenu('Warranty', ['-3 Years', '0 Seconds', 'Lifetime (18-21 Years)'], 'ItemSelection7', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
+        
+        initializeCollapsableMenus();
+    </script>
+</html>
