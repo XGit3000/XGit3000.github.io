@@ -16,13 +16,20 @@
                 background-image: url("images/pexels-alexander-dummer-132700.jpg");
                     
                     /* Full height */
+                /* display: flex;
+                flex-direction: column; */
                 height: 100%;
+                /* height: auto; */
+                /* min-height: 100vh; */
+                /* min-height: 100%; */
+
 
                 /* Create the parallax scrolling effect */
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                position: sticky;
             }
         </style>
     </head>
@@ -53,7 +60,7 @@
         console.log("yeah we in town now bois")
         fillMenu('Isotope', ['Uranium', 'Cesium', 'Plutonium'], 'ItemSelection1', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
         fillMenu('Instrument', ['Radiometer', 'Voltmeter', 'Windows XP Laptop', 'Multimeter'], 'ItemSelection2', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
-        fillMenu('Warrenty', ['20 Minutes', '2 years', 'Lifetime (5 years)'], 'ItemSelection3', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
+        fillMenu('Warranty', ['20 Minutes', '2 years', 'Lifetime (5 years)'], 'ItemSelection3', 'MainDropdownTitle', 'MainDropdownItems', 'MainDropdownMenu');
         initializeCollapsableMenus();
     </script>
 </html>
