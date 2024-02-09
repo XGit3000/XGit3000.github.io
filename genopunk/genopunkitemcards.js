@@ -35,14 +35,17 @@ function productCardHoverEffect(){
     // swipe_effect.setAttribute("style","background-color:#FFFF00; height:100%");
     // swipe_effect.classList.add("CoolSwipeEffect");
     // swipe_effect.animate([{height: '100%'},{height: '0%'}],{duration:1000, fill:'forwards'});
-    swipe_effect.animate([
-        {height: '0%'},
-        {height: '100%'},
-        {height: '100%'},
-    ], {
-        duration: 1000.0,
-        // fill: 'forwards'
-    });
+    // swipe_effect.animate([
+    //     {height: '0%'},
+    //     {height: '100%'},
+    //     {height: '100%'},
+    // ], {
+    //     duration: 1000.0,
+    //     // fill: 'forwards'
+    // });
+    swipe_effect.style.height = "0%";
+    swipe_effect.style.height = height;
+    swipe_effect.style.height = "100%";
     console.log(swipe_effect);
     console.log("end of func ig lol");
     count += 1;
