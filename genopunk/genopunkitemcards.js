@@ -28,7 +28,7 @@ function productCardHoverEffect(){
     console.log("HOBER");
     console.log(this);
     let id_string = `CoolSwipeEffectInstance${count}`
-    this.innerHTML += `<div class="CoolSwipeEffect" style="background-color:#FFFF00;" id="${id_string}"></div>`;
+    this.innerHTML += `<div style="background-color:#FFFF00;" id="${id_string}"></div>`;
     // let swipe_effect = this.getElementsByClassName("CoolSwipeEffect")[-1];
     // let swipe_effect = this.lastChild
     let swipe_effect = document.getElementById(id_string);
@@ -43,9 +43,13 @@ function productCardHoverEffect(){
     //     duration: 1000.0,
     //     // fill: 'forwards'
     // });
-    swipe_effect.style.height = "0%";
-    swipe_effect.style.height = height;
-    swipe_effect.style.height = "100%";
+    // swipe_effect.style.height = "0%";
+    // swipe_effect.style.height = height;
+    // swipe_effect.style.height = "100%";
+    swipe_effect.classList.add("CoolSwipeEffect", "Initial");
+    requestAnimationFrame(()=>{
+        swipe_effect.classList.remove("Initial");
+    })
     console.log(swipe_effect);
     console.log("end of func ig lol");
     count += 1;

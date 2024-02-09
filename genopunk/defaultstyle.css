@@ -36,6 +36,7 @@ body, html{
     }
 
     .CoolSwipeEffect{
+        /* -webkit-animation: CoolHover 600ms 100ms ease-out forwards; */
         /* transform-origin: bottom left;*/
         /* transform: skewY(22deg); */
 
@@ -45,12 +46,25 @@ body, html{
         /* height: 100%; */
         width: 100%;
         top: inherit;
+        bottom: 0%;
+        /* bottom: ; */
         /* top:0px; */
         /*are comments really transmitted?*/
-        transition: height ease-out 1s;
+        transition: height ease-out 1s, bottom ease-out 1s 0.1s;
         /* top:100px; */
         /* animation: move 1s ease forwards; */
     }
+    .CoolSwipeEffect.Initial{
+        height: 0%;
+        bottom: 100%;
+    }
+
+    /* @-webkit-keyframes CoolHover { */
+        /* 100% {
+            height: 100%;
+        }
+        
+    } */
     /* @keyframes move{
         to{
             /* height: 100%; */
