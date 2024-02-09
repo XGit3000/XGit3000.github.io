@@ -27,4 +27,36 @@ body, html{
         /* margin-top: -10px; */
         /* background-color: blue; */
     }
+
+    .CoolEffectsContainer{
+        position: absolute;
+        top: inherit;
+        height: 100%;
+        width: 100%;
+    }
+
+    .CoolSwipeEffect{
+        /* transform-origin: bottom left;*/
+        /* transform: skewY(22deg); */
+
+        /* height: 100%; */
+        pointer-events: none;
+        position: absolute;
+        /* height: 100%; */
+        width: 100%;
+        top: inherit;
+        /* top:0px; */
+        /*are comments really transmitted?*/
+        /* transition: height ease-out 1s; */
+        /* top:100px; */
+        /* animation: move 1s ease forwards; */
+    }
+    /* @keyframes move{
+        to{
+            /* height: 100%; */
+            /*wow the comment just splits thanks*/
+            /*transform: translateY(100px);
+        }
+    }
+    */
 }

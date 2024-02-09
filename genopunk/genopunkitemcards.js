@@ -14,6 +14,41 @@ function generateCard(card_title, card_color, target_div){
     return new_div_start;
 }
 
+function initializeCoolProductCardEffects(){
+    let product_cards = document.getElementsByClassName('CoolProductCard');
+    for(let i = 0; i < product_cards.length; i++){
+        let product_card = product_cards[i];
+        product_card.innerHTML += '\n<div class="CoolEffectsContainer"></div>'
+        let effects_container = product_card.getElementsByClassName("CoolEffectsContainer")[0];
+        effects_container.addEventListener("mouseover", productCardHoverEffect);
+    }
+}
+let count = 0;
+function productCardHoverEffect(){
+    console.log("HOBER");
+    console.log(this);
+    let id_string = `CoolSwipeEffectInstance${count}`
+    this.innerHTML += `<div class="CoolSwipeEffect" style="background-color:#FFFF00;" id="${id_string}"></div>`;
+    // let swipe_effect = this.getElementsByClassName("CoolSwipeEffect")[-1];
+    // let swipe_effect = this.lastChild
+    let swipe_effect = document.getElementById(id_string);
+    // swipe_effect.setAttribute("style","background-color:#FFFF00; height:100%");
+    // swipe_effect.classList.add("CoolSwipeEffect");
+    // swipe_effect.animate([{height: '100%'},{height: '0%'}],{duration:1000, fill:'forwards'});
+    swipe_effect.animate([
+        {height: '0%'},
+        {height: '100%'},
+        {height: '100%'},
+    ], {
+        duration: 1000.0,
+        // fill: 'forwards'
+    });
+    console.log(swipe_effect);
+    console.log("end of func ig lol");
+    count += 1;
+    console.log(count);
+}
+
 {/* <div class="CoolProductCard" style="background-color: #e0e0e0;">
             <div style="margin: 5px;">
                 <img src="assets/images/syringe.png" style="width: 100%; align-self: center;">
