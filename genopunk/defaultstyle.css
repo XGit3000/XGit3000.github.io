@@ -47,20 +47,34 @@ body, html{
         /* height: 100%; */
         width: 100%;
         /* top: inherit; */
-        top: -10%;
+        /* top: -10%; */
         bottom: 0%;
         /* bottom: ; */
         /* top:0px; */
+        top: 50%;
         /*are comments really transmitted?*/
-        transition: height ease-out 1s, top ease-out 1s 0.1s;
+        /* transition: height ease-out 1s, top ease-out 1s 0.1s; */
         /* top:100px; */
         /* animation: move 1s ease forwards; */
+        animation: UGHANIM linear 0.3s;
+        animation-iteration-count: 11;
+    }
+    @keyframes UGHANIM{
+        0% {
+            top: 50%;
+            opacity: 0;
+        }
+        100% {
+            top: -10%;
+            opacity: 1;
+        }
     }
     .CoolSwipeEffect.Initial{
         top: 100%;
         height: 0%;
         /* bottom: 100%; */
     }
+
 
     /* @-webkit-keyframes CoolHover { */
         /* 100% {
