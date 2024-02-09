@@ -4,17 +4,40 @@
     <title>
         Geno P.U.N.K
     </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="defaultstyle.css">
 </head>
 <body>
     <div class="TopBarBase", style="height: 8%; width: 100%;">
-        <div class="logo"></div>
+        <div class="container" style="width: auto; height: auto;">
+            <img src="assets/vector/dna.svg", style="width: auto;">
+        </div>
     </div>
-    <p>
+    <div style="display: flex; justify-content: center;" id="CoolContainer">
+        <div class="CoolProductCard" style="background-color: #e0e0e0;">
+            <div style="margin: 5px;">
+                <img src="assets/images/syringe.png" style="width: 100%; align-self: center;">
+                <p style="font-size: 2em; text-align: center;">STR GENO</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div style="display: flex; justify-content: center;">
+        <img src="assets/images/syringe.png" style="filter: hue-rotate(180deg);">
+    </div> -->
+
+    <!-- <p>
         things
-    </p>
-    <a href="thingsnuclear/index.html"><button class="logo">
+    </p> -->
+    <!-- <a href="thingsnuclear/index.html"><button class="logo">
         take me to things nuclear please
-    </button></a>
+    </button></a> -->
     <div style="background-image: image-set(url(./assets/vector/dna.svg)); height: 100px; width: 100px;"></div>
 </body>
+<script src="genopunkitemcards.js"></script>
+<script>
+    console.log("lol2");
+    console.log(generateCard("lol", "#1afe00"));
+    console.log("wait");
+    document.getElementById("CoolContainer").innerHTML += generateCard("PSYC GENO", "#1afe00");
+</script>
 </html>
