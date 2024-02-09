@@ -1,0 +1,6 @@
+body, html{
+
+    .logo{
+        background: image-set(url("./assets/vector/dna.svg"));
+    }
+}
