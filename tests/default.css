@@ -1,0 +1,30 @@
+#id1 {
+    width: 100%;
+    transition: all 2 ease;
+  }
+  
+  .child {
+    background-color: lemonchiffon;
+    min-height: 50px;
+    border: 1px solid rebeccapurple;
+    margin: 10px 0px;
+    animation: animateElement linear .3s;
+    animation-iteration-count: 1;
+  }
+  
+  #id2 {
+    padding: 20px;
+    border: 2px solid blue;
+  }
+  
+  
+  @keyframes animateElement{
+    0% {
+      opacity:0;
+      transform:  scaleY(0) translateY(-100%);
+    }
+    100% {
+      opacity:1;
+      transform:  scaleY(1) translateY(0%);
+    }
+  }
