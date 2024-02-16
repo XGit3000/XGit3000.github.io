@@ -28,7 +28,13 @@ function productCardHoverEffect(){
     console.log("HOBER");
     console.log(this);
     let id_string = `CoolSwipeEffectInstance${count}`
-    this.innerHTML += `<div class="CoolSwipeEffect" style="background-color:#FFFF00;" id="${id_string}"></div>`;
+    // this.innerHTML += `<div class="CoolSwipeEffect" style="background-color:#FFFF00;" id="${id_string}"></div>`;
+    let new_div = document.createElement("div");
+    new_div.classList.add("CoolSwipeEffect");
+    new_div.style.backgroundColor = "#FFFF00";
+    new_div.style.height = "10%";
+    new_div.id = `${id_string}`;
+    this.appendChild(new_div);
     // let swipe_effect = this.getElementsByClassName("CoolSwipeEffect")[-1];
     // let swipe_effect = this.lastChild
     let swipe_effect = document.getElementById(id_string);
@@ -36,9 +42,9 @@ function productCardHoverEffect(){
     // swipe_effect.classList.add("CoolSwipeEffect");
     // swipe_effect.animate([{height: '100%'},{height: '0%'}],{duration:1000, fill:'forwards'});
     swipe_effect.animate([
-        {height: '0%'},
-        {height: '100%'},
-        {height: '100%'},
+        {bottom: '-50%', top: "0%"},
+        // {height: '100%'},
+        {height: '100%', top: "150%"},
     ], {
         duration: 1000.0,
         // fill: 'forwards'
