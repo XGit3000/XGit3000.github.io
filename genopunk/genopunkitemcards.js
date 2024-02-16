@@ -27,7 +27,7 @@ let count = 0;
 function productCardHoverEffect(){
     console.log("HOBER");
     console.log(this);
-    let id_string = `CoolSwipeEffectInstance${count}`
+    let id_string = `CoolSwipeEffectInstance${count}`;
     this.innerHTML += `<div class="CoolSwipeEffect" style="background-color:#FFFF00;" id="${id_string}"></div>`;
     // let swipe_effect = this.getElementsByClassName("CoolSwipeEffect")[-1];
     // let swipe_effect = this.lastChild
