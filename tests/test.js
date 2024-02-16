@@ -1,13 +1,9 @@
-count = 0;
-function doCoolEffect(){
-  console.log("DOING EFFEDFSAFDF;LKAJSDGJHGALK;JHLAKSJDFHLKAJSHFDLKJASHGLKASJHF WHYDYYD");
-  // let container = document.getElementsByClassName("TestContainer")[0];
-  let id_string = `testEffectInstance${count}`;
-  this.innerHTML += `<div class="test-effect" id="${id_string}"></div>`;
-  count += 1;
-}
+const addButton = document.querySelector("button");
+const list = document.querySelector("ul");
+const li = document.querySelector("li");
 
-function startThing(){
-  let stuff = document.getElementsByClassName("TestContainer")[0];
-  stuff.addEventListener("mouseover", doCoolEffect)
-}
+addButton.addEventListener("click", () => {
+  console.log(";SALDIJHFGL;KDFHJSAUGL;KFJHDSAL;KSDAHFJKJ");
+  const liCopy = li.cloneNode(true);
+  list.appendChild(liCopy);
+});

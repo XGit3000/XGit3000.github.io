@@ -1,52 +1,51 @@
-body, html{
-  background-color: #353535;
+li {
+  -webkit-animation: show 600ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
+          animation: show 600ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
+  opacity: 0;
+  transform: rotateX(-90deg);
+  transform-origin: top center;
+}
 
-  p{
-      font-family: Roboto;
-      font-size: 30px;
-      font-size: 3.5vw;
+@-webkit-keyframes show {
+  100% {
+    opacity: 1;
+    transform: none;
   }
+}
 
-  .TestContainer{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    top: 0px;
+@keyframes show {
+  100% {
+    opacity: 1;
+    transform: none;
   }
+}
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
 
-  .test-effect{
-    position: absolute;
-    top: inherit;
-    /* top: 100%; */
-    height: 100%;
-    width: 100%;
-    border-width: 10px;
-    border-color: blueviolet;
-    background-color: aqua;
-    /* animation-duration: 1s; */
-    /* animation: test-anim 1s forwards; */
-    animation-name: test-anim-2;
-    animation-duration: 1s;
-  }
+body {
+  margin: 8vh auto;
+  width: min(60ch, 100vw - 2rem);
+  background-color: navy;
+  color: hotpink;
+  font-family: system-ui, sans-serif;
+}
 
-  @keyframes test-anim {
-    0%{
-      top: 100%;
-      height: 100%;
-    }
-    100%{
-      top: 0%;
-      height: 0%;
-    }
-  }
+button {
+  background-color: transparent;
+  font: inherit;
+  color: white;
+  border: 2px solid;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+button:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
 
-  @keyframes test-anim-2 {
-    0%{
-      background-color: aqua;
-    }
-    100%{
-      background-color: red;
-    }
-  }
-
+ul {
+  display: grid;
+  gap: 1rem;
 }
