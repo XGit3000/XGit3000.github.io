@@ -53,13 +53,14 @@ body, html{
         /* top:0px; */
         top: 50%;
         /*are comments really transmitted?*/
-        /* transition: height ease-out 1s, top ease-out 1s 0.1s; */
+        transition: height ease-out 1s, top ease-out 1s 0.1s;
+        animation-play-state: initial;
         /* top:100px; */
         /* animation: move 1s ease forwards; */
-        animation: UGHANIM linear 0.3s;
-        animation-iteration-count: 11;
+        /* animation: UGHANIM linear 0.3s;
+        animation-iteration-count: 11; */
     }
-    @keyframes UGHANIM{
+    /* @keyframes UGHANIM{
         0% {
             top: 50%;
             opacity: 0;
@@ -68,7 +69,7 @@ body, html{
             top: -10%;
             opacity: 1;
         }
-    }
+    } */
     .CoolSwipeEffect.Initial{
         top: 100%;
         height: 0%;
