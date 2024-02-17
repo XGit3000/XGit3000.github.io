@@ -37,7 +37,7 @@ body, html{
     }
 
     .CoolSwipeEffect{
-        animation: CoolEffectAnim 300ms ease-out forwards;
+        animation: CoolEffectAnim 300ms ease-in-out forwards;
         /* -webkit-animation: CoolHover 600ms 100ms ease-out forwards; */
         /* transform-origin: bottom left;*/
         /* transform: skewY(22deg); */
@@ -63,20 +63,7 @@ body, html{
         animation-iteration-count: 11; */
     }
 
-    @keyframes CoolEffectAnim {
-        /* 0%{
-            bottom: -100%;
-            top: -50%;
-            background-color: yellow;
-        } */
-        100%{
-            bottom: 100%;
-            top: 150%;
-            height: 100%;
-            background-color: blue;
-        }
-        
-    }
+    
     /* @keyframes UGHANIM{
         0% {
             top: 50%;
@@ -108,4 +95,20 @@ body, html{
         }
     }
     */
+}
+
+
+@keyframes CoolEffectAnim {
+    0%{
+        bottom: -100%;
+        top: -50%;
+        /* background-color: yellow; */
+    }
+    100%{
+        bottom: 100%;
+        top: 150%;
+        /* height: 100%; */
+        /* background-color: blue; */
+    }
+    
 }

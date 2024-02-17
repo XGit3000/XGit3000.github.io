@@ -37,22 +37,23 @@ function productCardHoverEffect(){
     this.appendChild(new_div);
     // let swipe_effect = this.getElementsByClassName("CoolSwipeEffect")[-1];
     // let swipe_effect = this.lastChild
-    let swipe_effect = document.getElementById(id_string);
+    // let swipe_effect = document.getElementById(id_string);
     // swipe_effect.setAttribute("style","background-color:#FFFF00; height:100%");
     // swipe_effect.classList.add("CoolSwipeEffect");
     // swipe_effect.animate([{height: '100%'},{height: '0%'}],{duration:1000, fill:'forwards'});
-    swipe_effect.animate([
-        {bottom: '-50%', top: "0%"},
-        // {height: '100%'},
-        {height: '100%', top: "150%"},
-    ], {
-        duration: 1000.0,
-        // fill: 'forwards'
-    });
-    console.log(swipe_effect);
-    console.log("end of func ig lol");
+    // swipe_effect.animate([
+    //     {bottom: '-50%', top: "0%"},
+    //     // {height: '100%'},
+    //     // {height: '100%', top: "150%"},
+    //     {bottom: '0%', top: "100%"}
+    // ], {
+    //     duration: 1000*6.0/60.0,
+    //     // fill: 'forwards'
+    // });
+    // console.log(swipe_effect);
+    // console.log("end of func ig lol");
     count += 1;
-    console.log(count);
+    // console.log(count);
 }
 
 {/* <div class="CoolProductCard" style="background-color: #e0e0e0;">
