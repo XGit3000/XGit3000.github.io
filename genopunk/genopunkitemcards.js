@@ -20,24 +20,28 @@ function initializeCoolProductCardEffects(){
         let product_card = product_cards[i];
         product_card.innerHTML += '\n<div class="CoolEffectsContainer"></div>'
         let effects_container = product_card.getElementsByClassName("CoolEffectsContainer")[0];
-        effects_container.addEventListener("mouseover", productCardHoverEffect);
+        effects_container.addEventListener("mouseover", function(){productCardHoverEffect(effects_container)});
     }
 }
 let count = 0;
-function productCardHoverEffect(){
+function productCardHoverEffect(effect_container){
     console.log("HOBER");
-    console.log(this);
+    console.log(effect_container);
     let id_string = `CoolSwipeEffectInstance${count}`
-    // this.innerHTML += `<div class="CoolSwipeEffect" style="background-color:#FFFF00;" id="${id_string}"></div>`;
+    // effect_container.innerHTML += `<div class="CoolSwipeEffect" style="background-color:#FFFF00;" id="${id_string}"></div>`;
     let new_div = document.createElement("div");
     new_div.classList.add("CoolSwipeEffect");
     new_div.style.backgroundColor = "#FFFF00";
-    new_div.style.height = "10%";
+    // new_div.style.height = "10%";
     new_div.id = `${id_string}`;
-    this.appendChild(new_div);
-    // let swipe_effect = this.getElementsByClassName("CoolSwipeEffect")[-1];
-    // let swipe_effect = this.lastChild
-    // let swipe_effect = document.getElementById(id_string);
+    effect_container.appendChild(new_div);
+    
+    // let swipe_effect = effect_container.getElementsByClassName("CoolSwipeEffect")[-1];
+    // let swipe_effect = effect_container.lastChild
+    let swipe_effect = document.getElementById(id_string);
+    swipe_effect.addEventListener("animationend", function(){removeEffect(effect_container, swipe_effect)});
+    // requestAnimationFrame(function(){swipe_effect.addEventListener("animationend", removeEffect);})
+    
     // swipe_effect.setAttribute("style","background-color:#FFFF00; height:100%");
     // swipe_effect.classList.add("CoolSwipeEffect");
     // swipe_effect.animate([{height: '100%'},{height: '0%'}],{duration:1000, fill:'forwards'});
@@ -50,10 +54,19 @@ function productCardHoverEffect(){
     //     duration: 1000*6.0/60.0,
     //     // fill: 'forwards'
     // });
-    // console.log(swipe_effect);
+    console.log(swipe_effect);
     // console.log("end of func ig lol");
     count += 1;
     // console.log(count);
+}
+
+function removeEffect(effect_container, effect_instance){
+    // console.log("EFFECT ENDED");
+    // console.log(effect_container);
+    // console.log(effect_instance);
+    // console.log("effect ended ended");
+    effect_container.removeChild(effect_instance);
+    // console.log(string_thing);
 }
 
 {/* <div class="CoolProductCard" style="background-color: #e0e0e0;">

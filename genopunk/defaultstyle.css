@@ -30,6 +30,8 @@ body, html{
 
     .CoolEffectsContainer{
         position: absolute;
+        border: inherit;
+        border-radius: inherit;
         top: inherit;
         height: 100%;
         width: 100%;
@@ -37,10 +39,10 @@ body, html{
     }
 
     .CoolSwipeEffect{
-        animation: CoolEffectAnim 300ms ease-in-out forwards;
+        animation: CoolEffectAnim 200ms ease-in-out forwards;
         /* -webkit-animation: CoolHover 600ms 100ms ease-out forwards; */
         /* transform-origin: bottom left;*/
-        /* transform: skewY(22deg); */
+        transform: skewY(22deg);
         background-color: yellow;
 
         height: 10%;
@@ -100,15 +102,15 @@ body, html{
 
 @keyframes CoolEffectAnim {
     0%{
-        bottom: -100%;
-        top: -50%;
-        /* background-color: yellow; */
-    }
-    100%{
         bottom: 100%;
-        top: 150%;
+        top: 100%;
         /* height: 100%; */
         /* background-color: blue; */
+    }
+    100%{
+        bottom: -100%;
+        top: -10%;
+        /* background-color: yellow; */
     }
     
 }
